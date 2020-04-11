@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#felipesi Was Here - 2017
+#felipesi - 2017
 
 echo "UPDATING SYSTEM, WAIT..."
 apt-get update -y > /dev/null
