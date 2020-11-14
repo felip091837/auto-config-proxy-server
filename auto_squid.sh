@@ -10,7 +10,6 @@ fi
 
 echo "UPDATING SYSTEM, WAIT..."
 apt update -y &>/dev/null
-apt upgrade -y &>/dev/null
 echo -e "UPDATE SYSTEM - [OK]\n"
 
 echo "INSTALLING SERVER PROXY SQUID..."
