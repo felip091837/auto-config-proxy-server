@@ -26,17 +26,17 @@ ip=$(curl -s icanhazip.com) &>/dev/null
 echo "SETTING UP SQUID..."
 
 cat <<EOT > /etc/squid/squid.conf
-	http_port 8080
-	acl net dstdomain
-	acl REQUEST method GET
-	acl REQUEST method POST
-	acl REQUEST method OPTIONS
-	acl REQUEST method HEAD
-	acl REQUEST method CONNECT
-	http_access allow net
-	http_access allow REQUEST
-	http_access deny all
-	acl liberado url_regex -i
+http_port 8080
+acl net dstdomain
+acl REQUEST method GET
+acl REQUEST method POST
+acl REQUEST method OPTIONS
+acl REQUEST method HEAD
+acl REQUEST method CONNECT
+http_access allow net
+http_access allow REQUEST
+http_access deny all
+acl liberado url_regex -i
 EOT
 
 echo -e "SETTING UP SQUID - [OK]\n"
